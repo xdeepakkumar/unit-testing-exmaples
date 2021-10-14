@@ -15,4 +15,9 @@ public class PersonService {
 		return this.personRepository.findAll();
 	}
 
+	public PersonService(PersonRepository personRepository) {
+		super();
+		this.personRepository = personRepository;
+	}
+
 }
